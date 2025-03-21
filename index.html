@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Образовательный набор CubeSat</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+</head>
+<body>
+    <header>
+        <div class="logo">MaxBot</div>
+        <nav class="nav-left">
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О проекте</a></li>
+                <li><a href="benefits.html">Преимущества</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="block animate full-width">
+            <h1>Образовательный набор CubeSat</h1>
+            <p>Изучите основы проектирования, сборки и управления спутниками формата CubeSat. Это уникальная возможность для молодежи погрузиться в мир космических технологий, научиться работать с реальными инженерными задачами и проводить научные эксперименты.</p>
+            <p>Набор включает в себя полный комплект компонентов для сборки спутника, методические материалы и инструкции. Это позволяет учащимся получить практический опыт в области космических технологий и подготовиться к карьере в этой сфере.</p>
+        </section>
+        
+        <section class="block animate full-width">
+            <h2>Возможности для исследований</h2>
+            <p>Наш набор позволяет учащимся проводить научные эксперименты и исследования, что является важным шагом в развитии их навыков и знаний в области космических технологий.</p>
+            <p>Учащиеся могут работать над проектами, связанными с разработкой полезной нагрузки, планированием полета и интеграцией различных систем для обеспечения функционирования спутника.</p>
+        </section>
+        
+        <section class="block animate full-width">
+            <h2>Карусель фотографий</h2>
+            <div class="carousel">
+                <div><img src="nei.jpg" alt="Фотография 1"></div>
+                <div><img src="sx.jpg" alt="Фотография 2"></div>
+                <div><img src="sot.jpg" alt="Фотография 3"></div>
+            </div>
+        </section>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: false, // Удаление кнопок
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true,
+                touchMove: true, // Включение перелистывания при клике на изображение
+                swipe: true // Включение перелистывания при свайпе
+            });
+        });
+    </script>
+</body>
+</html>
